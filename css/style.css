@@ -1,0 +1,146 @@
+/* to-do normalize.css */
+
+body{
+    /*background-color: #F8F3D5;*/
+    background-color: #fff;
+    /*background-color: #E6E5E6;*/
+    font-family: "微软雅黑",tahoma;
+}
+
+.header{
+    /*background-color: #3278be;*/
+    /*border-bottom: 3px solid #1e64aa;*/
+    /*background-color: #282828;*/
+    /*background-color: #3C454F;*/
+    /*background-color: #252525;*/
+    background-image: url(../img/nav-tail.png);
+    /*border-bottom: 2px solid #468847;*/
+    border-bottom: 1px solid #ddd;
+}
+
+.inner{
+    width: 960px;
+    margin: 0 auto; 
+}
+
+.header-inner{
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.narbar{
+    position: absolute;
+    right:0;
+    top: 15px;
+}
+
+.narbar > li > a{
+    color: white;
+}
+
+.narbar > li > a:hover, .narbar > li > a:focus{
+    color: #ccc;
+    /*background: none;*/
+    background: #1481C6;
+}
+
+.main{
+    /*background-color: #F8F3D5;*/
+    border-top: 2px solid #000;
+}
+
+.main-inner{
+    padding: 15px 0;
+}
+
+.share-inner{
+    position: relative;
+    height: 25px;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /*border-top: 3px solid #C8C5B7;*/
+}
+
+.share-inner .follow{
+    position: absolute;
+    left:0;
+}
+
+.share-inner .shareto{
+    position: absolute;
+    right:0;
+}
+
+#recommendCarousel{
+    margin-bottom: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+
+.recommend-info{
+    text-align: center;
+    margin: 20px 0;
+    color: #5A5A5A;
+}
+
+.shareto a, .follow a{
+    text-indent: -999px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    background-image:url(../img/sns-icon.png);
+    background-repeat: no-repeat;
+    margin-right: 3px;
+    line-height: 12px;
+}
+
+.share_weibo{
+    background-position: 0 0;
+    margin-left: 3px;
+}
+
+.share_qzone{
+    background-position: 0 -40px;
+}
+
+.share_sina{
+    background-position: 0 -80px;
+}
+
+.share_pengyou{
+    background-position: 0 -120px;
+}
+
+.share_github{
+    background-position: 0 -280px;
+}
+
+.proj-img{
+    display: block;
+    margin: 10px auto 10px;
+    max-height: 145px;
+}
+
+.proj-highlight{
+    font-size: 18px;
+    color:#999999;
+}
+
+
