@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>PojectName - Project Brief</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PojectName - Project Brief">
+
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-responsive.min.css">
+    <link href="../../lib/prettify/prettify.css" rel="stylesheet">
+    <link href="../../css/project.css" rel="stylesheet">
+	<style>#downloads{width:120px;}</style>
+</head>
+<body>
+    
+    <header class="inner">
+        <div class="container">
+            <a href="../index.html" title="返回首页"><img class="logo" width ="150" height ="45" src="../../img/logo.png" alt="Tencent Open Source - 腾讯开源项目"></a>
+            <a id="forkme_banner" href="https://github.com/AlloyTeam/webtop">View on GitHub</a>
+
+            <h1 id="project_title">AlloyDesktop</h1>
+            <h2 id="project_tagline">html5 桌面 App 开发引擎</h2>
+
+            <section id="downloads">
+                <a class="zip_download_link" href="http://download.alloyteam.com/webtop.zip">下载可执行文件压缩包</a>
+            </section>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="row">
+            <div class="span3 sidebar">
+                <ul class="nav nav-list sidenav" data-spy="affix" data-offset-top="200">
+                    <li><a href="#overview"><i class="icon-chevron-right"></i>概览</a></li>
+                    <li><a href="#develop"><i class="icon-chevron-right"></i>开发配置</a></li>					
+                    <li><a href="#API"><i class="icon-chevron-right"></i>API</a></li>
+                </ul>
+            </div>
+            <div class="span9">
+                <section id="overview">
+                    <h3>概览</h3>
+		<p><span>AlloyDesktop</span><span style="font-family: 宋体;">？这是一个什么东西呢？这是一个能将网页像软件一样运行在桌面上的</span><span style="font-family: 'Times New Roman';">app</span><span style="font-family: 宋体;">开发引擎。该引擎实现了对网页的透明渲染，使网页不再局限于浏览器的框框。同时，提供强大的</span><span style="font-family: 'Times New Roman';">api</span><span style="font-family: 宋体;">支持，使你能轻松实现许多传统网页实现不了的功能，诸如窗口控制，文件</span><span style="font-family: 'Times New Roman';">IO</span><span style="font-family: 宋体;">，图像处理……可以这样说，一般软件所能实现的大部分功能，利用AlloyDesktop</span><span style="font-family: 宋体;">开发的</span><span style="font-family: 'Times New Roman';">app</span><span style="font-family: 宋体;">也能实现，而且实现起来更快更容易。另外，它还具备传统软件所不具备的优势，那就是强大的界面渲染能力。利用</span><span style="font-family: 'Times New Roman';">html5</span><span style="font-family: 宋体;">和</span><span style="font-family: 'Times New Roman';">css3</span><span style="font-family: 宋体;">的新特性，你可以轻轻松松实现阴影透明等特效。相对于市面上许多软件界面开发引擎，网页开发的门槛相对来说要低得多，而且是一个通用的标准。利用该引擎，可以开发诸如</span><span style="font-family: 'Times New Roman';">QQ</span><span style="font-family: 宋体;">，浏览器，播放器，</span><span style="font-family: 'Times New Roman';">PS</span><span style="font-family: 宋体;">等软件。</span></p>
+<p>下面简单讲下该引擎的运行原理。该引擎运行<span style="font-family: 'Times New Roman';">app</span><span style="font-family: 宋体;">时，先读取一个后缀名为</span><span style="font-family: 'Times New Roman';">.app</span><span style="font-family: 宋体;">的配置文件，再通过读取配置文件的相关参数获得网页的地址以及窗口大小等其他相关的配置。然后启动一个透明浏览器，加载相应的网页。网页中可以通过</span><span style="font-family: 'Times New Roman';">js</span><span style="font-family: 宋体;">调用引擎提供的</span><span style="font-family: 'Times New Roman';">api</span><span style="font-family: 宋体;">，实现一些本地</span><span style="font-family: 'Times New Roman';">app</span><span style="font-family: 宋体;">的功能，即使用普通浏览器浏览网页时网页实现不了的功能。</span></p>
+<p>下载地址：<a href="http://download.alloyteam.com/webtop.zip">http://download.alloyteam.com/webtop.zip</a></p>
+<p>官方群：257960168</p>
+<p>该引擎目前还处于<span style="font-family: 'Times New Roman';">beta</span><span style="font-family: 宋体;">阶段，以下为使用改引擎开发的</span><span style="font-family: 'Times New Roman';">app</span><span style="font-family: 宋体;">的部分界面的截图。</span></p>
+<p><img class="alignnone size-full wp-image-51" title="screen" src="img/default.png" alt="" width="880" height="650"></p>
+<p>引擎初始界面，放了几个demo。</p>
+<p><img title="screen" src="img/browser.png" alt="" width="600"><br>
+透明浏览器</p>
+<p><img title="1" src="img/music.png" alt="" width="270" height="80"><br>
+音乐widget</p>
+<p><img title="1" src="img/ruler.png" alt="" width="600"><br>
+屏幕尺子</p>
+<p>……</p>
+</section>
+<section id="develop">
+                    <h3>开发配置</h3>
+<p>其中的透明浏览器可用来在开发阶段进行调试。点击<a href="http://www.alloyteam.com/wp-content/uploads/2012/09/glass_ball.png"><img title="glass_ball" src="http://www.alloyteam.com/wp-content/uploads/2012/09/glass_ball.png" alt="" width="32" height="32"></a>按钮切换网页渲染模式，默认使用不透明模式渲染。点击<a href="http://www.alloyteam.com/wp-content/uploads/2012/09/setting.png"><img title="setting" src="http://www.alloyteam.com/wp-content/uploads/2012/09/setting.png" alt="" width="32" height="32"></a>按钮或按F12或F9可打开开发者工具，<a href="http://www.alloyteam.com/wp-content/uploads/2012/09/refresh.png"><img title="refresh" src="http://www.alloyteam.com/wp-content/uploads/2012/09/refresh.png" alt="" width="48" height="48"></a>强制刷新。点击浏览器右上角<a href="http://www.alloyteam.com/wp-content/uploads/2012/07/apps1.png"><img title="apps" src="http://www.alloyteam.com/wp-content/uploads/2012/07/apps1.png" alt="" width="32" height="32"></a>按钮可生成默认.app文件，app文件可双击直接运行app文件为一配置文件，可使用记事本打开，注意不要设为默认打开。可使用的配置项如下：</p>
+<ul>
+<li>url：网页地址</li>
+<li>name：程序名字</li>
+<li>icon：程序图标</li>
+<li>width：初始化窗口宽度</li>
+<li>height：初始化窗口高度</li>
+<li>x：初始化窗口x坐标（相对于屏幕）</li>
+<li>y：初始化窗口y坐标（相对于屏幕）</li>
+<li>enableDrag：是否允许全窗口拖拽，仅对透明窗口有效，1为真，0为假，以下同</li>
+<li>enableResize：是否允许改变窗口大小</li>
+<li>disableTransparent：是否禁用透明渲染</li>
+<li>disableRefresh：禁止按F5刷新</li>
+<li>disableDevelop：禁止按F12打开开发者工具</li>
+<li>hasBorder：是否使用默认边框</li>
+<li>max：初始化时是否最大化窗口，如果为真，则忽略width，height，x，y四个参数</li>
+<li>exStyle：高级参数，设置窗口额外属性，诸如置顶，去掉任务栏图标等</li>
+</ul>
+</section>
+<section id="API">
+                    <h3>API文档</h3>
+<p>注：以下函数的最后一个参数都为handler，代表窗口句柄，不传则使用本窗口的句柄，只有在操作其他窗口时才有作用。请不要在全局变量中使用handler这个变量名。以下API都是属于AlloyDesktop对象的，调用时请用AlloyDesktop.xx调用。</p>
+<p><strong>窗口相关</strong></p>
+<ul>
+<li>bringToTop(handler);//窗口移到最顶层</li>
+<li>browse(url,handler);//在新进程中使用默认的透明浏览器浏览网页，url为网页路径</li>
+<li>close(handler);//关闭窗口</li>
+<li>createBrowser(url,handler);//在新进程中打开一个webtop窗口，url为网页路径</li>
+<li>createWindow(url,exStyle,isTransparent,readyHandler,handler)//在当前进程中创建一个窗口，并返回窗口句柄，readyHandler为窗口网页加载后要执行的js代码，此函数或将废弃</li>
+<li>createWindowBase(url,exstyle,isTransparent,readyHandler,handler);//同上，区别在于使用本地相对路径，此函数或将废弃</li>
+<li>drag(handler);//拖拽窗口</li>
+<li>enableDrag(handler);//允许拖拽窗口，同配置参数enableDrag=1作用相同。</li>
+<li>focus(handler);//使窗口获得焦点</li>
+<li>getPos(handler);//获得窗口位置，返回值为一object，格式如下{x:13,y:54}</li>
+<li>getScreenSize(handler);//获取屏幕大小，返回值为一object，格式如下{width:130,height:54}</li>
+<li>getSize(handler);//获得窗口大小，返回值为一object，格式如下{width:130,height:54}</li>
+<li>hide(handler);//隐藏窗口</li>
+<li>loadUrl(url,handler);//加载网页，url为网页路径</li>
+<li>max(handler);//最大化窗口</li>
+<li>mini(hander);//最小化窗口</li>
+<li>move(x,y,handler);//移动窗口</li>
+<li>ready(handler);//只对被创建出来的窗口有用，执行父窗口闯过来的js代码readyHandler</li>
+<li>reload(handler);//重新加载当前页面</li>
+<li>reloadIgnoreCache(handler);//重新加载当前页面并忽略缓存</li>
+<li>restore(handler);//还原窗口，对应于hide函数</li>
+<li>runApp(appName,param,handler);//运行一个app，appName为.app文件路径，param为参数，会带在url上，格式如param=xxx，在app中可通过获取当前网页url从中提取出该参数。此函数不太稳定，请尽量使用runAppEx。</li>
+<li>runAppEx(appName,param,handler);//也是运行一个app，同runApp的区别是会新起一个进程运行app</li>
+<li>setSize(w,h,handler);//w为窗口宽度，h为窗口高度</li>
+<li>setTitle(title,handler);//设置窗口标题</li>
+<li>setTopMost(handler);//窗口置顶，此函数跟bringToTop的区别在于此函数会使窗口永远置顶，除非有另外一个窗口调用了置顶函数</li>
+<li>setWindowStyle(exStyle,handler);//高级函数，设置窗口额外属性，诸如置顶之类。</li>
+<li>showDev(handler);//打开开发者工具</li>
+<li>stopDrag(handler);//停止窗口拖拽</li>
+</ul>
+<p><strong>图像相关</strong></p>
+<ul>
+<li>saveImageFromBase64(s,path,handler);//s为base64字符串，可通过canvas的toDataURL函数生成，path为保存路径，可以使用相对路径，即相对主网页文件的路径，以下同</li>
+<li>saveImageFromStream(id,width,height,path,handler);//id为二进制流id,下面会讲到如何创建二进制流，width为图像宽度，height为图像高度，path为图像保存路径</li>
+<li>toImage(path,handler);//把当前网页存为一张图片，支持透明，path为图像保存路径</li>
+<li>toImageEx(path,x,y,width,height,handler);//把当前网页的某一矩形区域存为图像，x和y为左上角坐标，width和height为宽度跟高度，ptah为图像保存路径</li>
+</ul>
+<p><strong>系统相关</strong></p>
+<ul>
+<li>setTaskIcon(id,path,title,handler);//设置一托盘图标，id自己指定，确保不重复即可，path为图标文件所在路径，暂时只支持本地图标，title为鼠标移到图标上所要显示的文字</li>
+<li>delTaskIcon(id,handler);//删除一托盘图标，id为创建图标时使用的id</li>
+<li>findFiles(path,flag,handler);//查找文件，path为文件路径，支持通配符，flag为true则查找子目录，返回格式为一数组，格式如下”["1.txt","AmfStream.cpp","AmfStream.h",{"name":"base","list":["2.txt"]}]，其中name为目录名，list为目录下的文件</li>
+<li>getCurrentDirectory(handler);//获取当前app文件所在目录</li>
+<li>getFolder(handler);//打开“选择文件夹”对话框，返回值为文件夹路径</li>
+<li>getFileSize(filename,handler);//获得文件大小，filename为文件路径，返回值为文件所占字节数</li>
+<li>getOpenName(filename,handler);//打开“打开文件”对话框，filename为对话框中要显示的默认名字，返回值为文件路径</li>
+<li>getOpenNames(filename,handler);//打开“打开文件”对话框，支持多选，filename为对话框中要显示的默认名字，返回值为一个数组，数组头一个元素为文件夹路径，剩余的元素为选择的各个文件名字。</li>
+<li>getSaveName(filename,handler);//打开“保存文件”对话框，filename为对话框中要显示的默认名字</li>
+<li>download(url,filename);//下载一文件，url为网址，filename为要保存的文件路径</li>
+<li>readFile(path,handler);//读取一文本文件的所有内容，返回值为文件内容的字符串</li>
+<li>writeFile(path,s,handler);//写一文本文件，s为要写入的字符串</li>
+<li>logOff(flag,handler);//注销windows系统，flag为true表示强制执行，以下同</li>
+<li>reboot(flag,handler);//重启系统</li>
+<li>quit(handler);//退出当前进程</li>
+<li>shutdown(flag,handler);//关闭系统</li>
+<li>createMemory(name,filename,size,handler);//创建一共享内存块，供二进制流读写使用，name为内存块命名，不同进程可通过此名字进行共享内存操作，filename文件路径，如果不为空，则建立一磁盘文件，所有二进制操作将会写入此文件中，为空的话则不创建文件，所有的二进制流只在内存中进行，size为文件大小，返回值为代表内存块的id</li>
+<li>createStream(id,handler);//创建一二进制文件流，id为调用createMemory函数创建内存块的返回值，返回值为代表二进制流的id</li>
+<li>deleteMemory(id,handler);//释放一内存块，id为createMemory函数的返回值。使用createMemory之后要记得调用此函数释放内存，否则会造成内存泄漏。</li>
+<li>deleteStream(id,handler);//释放一二进制流，id为createStream函数的返回值。使用createStream之后要记得调用此函数释放内存，否则会造成内存泄漏。</li>
+<li>getSharePos(handler);//获取默认共享内存块的二进制流读写指针位置。注：此内存块为所有进程共享，默认创建的</li>
+<li>setSharePos(i);设置共享内存块的二进制流读写指针位置</li>
+<li>getStreamPos(id,handler);//获取一二进制流的读写指针位置，id为二进制流id，单位为字节，id为二进制流id，不传则使用上面提到的默认的共享内存的二进制流，以下同</li>
+<li>setStreamPos(pos,id,handler);//设置一二进制流读写指针的位置，单位为字节</li>
+<li>readByte(id,handler);//读取一字节</li>
+<li>readBytes(l,id,handler);//读取连续内存块，l为内存块的长度，返回一二进制数组</li>
+<li>readInt(id,handler);//写入一占四位字节的整数</li>
+<li>readGB(l,id,handler);//读取固定长度的GB2312编码的字符串，l为字符串长度，注意一个汉字的长度为2</li>
+<li>readString(l,id,handler);//读取固定长度使用utf-8编码的字符串，l为字符串长度，以下同，注意一个汉字的长度为3</li>
+<li>readStringEx(l,id,handler);//读取固定长度的字符串，对应于writeStringEx。</li>
+<li>readWString(l,id,handler);//读取固定长度的宽字符串，一个宽字符占两个字节，无论英文或是中文，但是传递长度的参数时无需乘以2，只需传字数即可</li>
+<li>readWStringEx(l,id,handler);//读取固定长度的宽字符串，对应于writeWStringEx</li>
+<li>writeByte(b,id,handler);//向一二进制流写入一字节，b为要写入的数字</li>
+<li>writeBytes(arr,id,handler);//向二进制流写入固定长度的连续字节，arr为存储要写进去的数据的数组</li>
+<li>writeInt(i,id,handler);//读写一占四字节的整数</li>
+<li>writeString(s,id,handler);//写入一字符串</li>
+<li>writeStringEx(s,id,handler);//写入一字符串，与writeString不同的是此函数会在字符串前面写入三个字节，标明字符串的长度。</li>
+<li>writeWString(s,id,handler);//写入一宽字符串</li>
+<li>writeWStringEx(s,id,handler);//写入一宽字符串，与writeWString不同的是此函数会在字符串前面写入三个字节，标明字符串的长度。</li>
+</ul>
+<p><strong>P2P相关</strong></p>
+<ul>
+<li>connect(ip,uid,handler);//连接到服务器，ip为服务器地址，uid为用户名，服务器在内网则使用内网地址，在外网就使用外网地址</li>
+<li>getIPAndPort;//获取当前webtop窗口所使用的ip和端口号，返回值为一object，结构如下：{ip:’192.169.0.102′,port:65345}</li>
+<li>getUsers(handler);//获取所有用户列表，该函数不会同步返回用户列表，调用后请监听webtopP2PUpdateUserList事件来得到用户列表，下面关于自定义事件部分会详细谈到。</li>
+<li>connectByHost(hostName,uid,handler);//连接到服务器，hostName为服务器名称，可以为局域网机器名字或者域名，uid为用户名</li>
+<li>sendMessage(userName,msg,handler);//向一用户发送消息，userName为用户名称，msg为要发送的消息</li>
+<li>sendMsgToIP(ip,port,msg,handler);//向某一ip地址发送消息，参数ip为ip地址，port为端口号，msg为要发送的消息</li>
+<li>sendMsgToServer(msg,handler);//向server发送消息</li>
+</ul>
+<p><strong>自定义事件</strong></p>
+<p><strong></strong>webtop中定义了一些自定义事件，如下 注，所有事件的回调函数都只有一个参数e，代表事件对象，其中e.detail对象为一object，包含事件的相关信息</p>
+<ul>
+<li>AlloyDesktopReady事件，webtop对象创建完成之后触发，有关webtop的初始化调用请放在此事件触发之后。 监听代码：addEventListener(“webtopReady”,readyHandler);//其中webtopReady为事件名，readyHandler为事件的回调函数。以下事件的监听方法与此相同。注：对AlloyDesktopReady事件的监听请放在onload之前。</li>
+<li>AlloyDesktopWindowResize：webtop窗口改变大小之后触发，e.detail的结构如下{width:243,heigh:234}。width和height为窗口的宽度和高度</li>
+<li>AlloyDesktopWindowMove：webtop窗口移动后触发，e.detail结构如下{x:34,y:43}，x和y为窗口的坐标，相对于屏幕</li>
+<li>AlloyDesktopDragDrop：当拖拽文件到窗口时触发，仅在透明渲染模式下有效（因为在此模式下html5的拖拽功能会失效）。e.detail的结构如下{list:["E:/webtop/1.png","E:/webtop/2.png"]}。list为文件列表，存储各个文件的路径</li>
+<li>AlloyDesktopDownload：下载进度事件，e.detail的结构如下{filename:”xx”,count:423,contentLength:234234}，filename为文件路径，count为已下载字节数，contentLength为要下载内容的字节数。</li>
+<li>AlloyDesktopDownloadComplete，下载完成事件。</li>
+<li>AlloyDesktopWindowActive：窗口激活时触发</li>
+<li>AlloyDesktopWindowFocus：窗口获得焦点时触发</li>
+<li>AlloyDesktopRefresh：//在用户按下F5时触发，仅在配置项disableRefresh=0时才会触发</li>
+<li>AlloyDesktopShowDev：//在用户按下F12时触发，仅在配置项disableDevelop=0时才会触发</li>
+<li>AlloyDesktopTaskMouse：在托盘图标上进行相关的鼠标操作后触发，e.detail的结构如下{type:34}，其中type代表鼠标动作的类型，为一整数，在实际开发中可通过打log来获取相关数值代表的鼠标类型</li>
+<li>AlloyDesktopWindowClose：webtop窗口被关闭时触发</li>
+<li>webtopMouseLeave：鼠标离开webtop窗口时触发</li>
+<li>webtopShowTip：在鼠标移到具有title属性的dom元素上面时触发（webtop没有实现默认的tips）</li>
+<li>webtopP2PRecieveMessage：在webtop窗口收到p2p消息时触发，e.detail的结构如下：{ip:’192.168.0.102′,port:64656,msg:’sfsdfsfasdf’}。ip为发送方的ip，port为发送方的端口，msg为对方发送的消息</li>
+<li>AlloyDesktopP2PInitInfo：调用connect之后，p2p初始化之后触发，e.detail的结构如下：{ip:’192.168.0.102′,port:64656}。ip为当前webtop窗口使用的ip，port当前webtop窗口使用的端口</li>
+<li>AlloyDesktopP2PUpdateUserList：调用getUsers函数之后的回调事件。e.detail的结构如下{list:['192.168.0.102:55654_melody','192.168.0.101:55354_yukin'],ip:’192.168.0.102′,port:64656}。其中192.168.0.102为该用户的ip，55654为该用户的端口，melody为该用户的用户名。ip为当前webtop窗口使用的ip，port当前webtop窗口使用的端口</li>
+</ul>
+ </section>               
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
