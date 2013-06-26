@@ -83,9 +83,9 @@
         brief: '基于html5的JS图片图像处理库',
         intro: 'AlloyImage 使用纯 Javascript 开发的，基于 Web 的 html5 在线图像处理引擎，同时集成了一些方便快捷的图像处理API。'
     }, {
-        url: 'proj/template.html',
+        url: 'proj/AlloyDesktop/index.html',
         name: 'AlloyDesktop',
-        img: 'img/proj/webtop.png',
+        img: 'img/proj/alloydesktop.png',
         brief: 'html5 桌面 App 开发引擎',
         intro: 'AlloyDesktop 是一个基于 html5 的桌面上的 app 开发引擎，实现对网页的透明渲染，同时提供强大的 api 支持，使你能够使用如文件 IO 等高级功能'
     }, {
