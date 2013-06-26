@@ -140,7 +140,10 @@ body{
 
 .proj-highlight{
     font-size: 18px;
-    color:#999999;
+    color:#3a3a3a;
 }
 
+.proj-intro{
+    color:#999999;
+}
 
