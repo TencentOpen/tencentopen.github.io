@@ -89,7 +89,7 @@
         brief: 'html5 桌面 App 开发引擎',
         intro: 'AlloyDesktop 是一个基于 html5 的桌面上的 app 开发引擎，实现对网页的透明渲染，同时提供强大的 api 支持，使你能够使用如文件 IO 等高级功能'
     }, {
-        url: 'proj/template.html',
+        url: 'proj/rythem/index.html',
         name: 'Rythem',
         img: 'img/proj/rythem.png',
         brief: '开源跨平台抓包调试工具',
