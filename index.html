@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="header-inner inner">
+        <div class="header-inner container">
             <a class="logo" title="Tencent Open Source - 腾讯开源项目">
                 <img src="img/logo.png" alt="Tencent Open Source - 腾讯开源项目">
             </a>
@@ -24,47 +24,40 @@
         </div>
     </div>
     <div class="main">
-        <div class ="main-inner inner">
-        <div id="recommendCarousel" class="carousel slide">
-          <ol class="carousel-indicators">
-            <li data-target="#recommendCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#recommendCarousel" data-slide-to="1"></li>
-            <li data-target="#recommendCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item">
-               <div class="item">
-                <img src="img/slide2.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>腾讯开源</h4>
-                  <p>腾讯开源项目，正式启航</p>
+        <div class ="main-inner container">
+            <div id="recommendCarousel" class="carousel slide">
+              <ol class="carousel-indicators">
+                  <li data-target="#recommendCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#recommendCarousel" data-slide-to="1"></li>
+                  <li data-target="#recommendCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="active item">
+                  <div class="item">
+                     <div class="slide">
+                         <a class="slide-link slide1"></a>
+                     </div>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="slide">
+                        <a class="slide-link slide2" href="http://alloyteam.github.io/AlloyPhoto/" target="_blank" title="AlloyImage: 基于html5的JS图片图像处理库"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slide">
+                        <a class="slide-link slide3" href="http://alloyteam.github.io/JX/" target="_blank" title="JX: 模块化的非侵入式 Web 前端框架"></a>
+                    </div>
                 </div>
               </div>
+              <a class="carousel-control left" href="#recommendCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#recommendCarousel" data-slide="next">&rsaquo;</a>
             </div>
-            <div class="item">
-                <img src="img/slide1.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4><a href="proj/alloyimage.html">AlloyImage</a></h4>
-                  <p>HTML5专业级图像处理引擎，值得拥有</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slide3.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4><a href="proj/jx.html">Jx (Javascript eXtension tools)</a></h4>
-                  <p>适用于 Web Page 和 Web App 项目的模块化的非侵入式Web前端框架</p>
-                </div>
-            </div>
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#recommendCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#recommendCarousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
     </div>
     <div class="share">
-        <div class="share-inner inner">
+        <div class="share-inner container">
             <div class="follow">
                 <span class="label label-success">关注我们</span>
                 <a class="share_weibo" title="腾讯微博">腾讯微博</a>
@@ -80,16 +73,18 @@
             </div>
         </div>
     </div>
-    <div class="intro row inner">
-        <h1 class="recommend-info" id="recommendInfo">开源项目推荐</h1>
-        <div id="projContainer">
+    <div class="container">
+        <div class="intro row">
+            <h1 class="recommend-info" id="recommendInfo">开源项目推荐</h1>
+            <div id="projContainer">
 
+            </div>
         </div>
     </div>
     <div class="footer">
       <div class="container">
         <p><a href="#">开源协议</a> | <a href="#">反馈意见</a></p>
-        <p>© 1997-2013 Tencent. All Rights Reserved.</p>
+        <p>© 1998-2013 Tencent. All Rights Reserved.</p>
       </div>
     </div>
     <script type="text/plain" id="projTemplate">
@@ -102,11 +97,11 @@
         <% }%>
         <div class="span4">
             <a href="<%=item.url%>" title="<%=item.name%>: <%=item.brief%>" target="_blank"><img class="proj-img lazy" width="300" height="150" data-src="<%=item.img%>"></a>
-            <h2>
+            <h2 class="proj-name">
                 <a href="<%=item.url%>" title="<%=item.name%>: <%=item.brief%>" target="_blank "><%=item.name%></a>
             </h2>
             <p class="proj-highlight"><%=item.brief%></p>
-            <p><%=item.intro%></p>
+            <p class="proj-intro"><%=item.intro%></p>
         </div>
         <% if((i+1)%3==0 || i == len){ %>
         </div>   
