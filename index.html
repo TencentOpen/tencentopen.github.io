@@ -31,7 +31,6 @@
             <li data-target="#recommendCarousel" data-slide-to="1"></li>
             <li data-target="#recommendCarousel" data-slide-to="2"></li>
           </ol>
-          <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
                <div class="item">
@@ -52,12 +51,11 @@
             <div class="item">
                 <img src="img/slide3.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4><a href="proj/jx.html">Jx (Javascript eXtension tools)</a></h4>
+                  <h4><a href="proj/jx.html">JX (Javascript eXtension tools)</a></h4>
                   <p>适用于 Web Page 和 Web App 项目的模块化的非侵入式Web前端框架</p>
                 </div>
             </div>
           </div>
-          <!-- Carousel nav -->
           <a class="carousel-control left" href="#recommendCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#recommendCarousel" data-slide="next">&rsaquo;</a>
         </div>
@@ -106,7 +104,7 @@
                 <a href="<%=item.url%>" title="<%=item.name%>: <%=item.brief%>" target="_blank "><%=item.name%></a>
             </h2>
             <p class="proj-highlight"><%=item.brief%></p>
-            <p><%=item.intro%></p>
+            <p class="proj-intro"><%=item.intro%></p>
         </div>
         <% if((i+1)%3==0 || i == len){ %>
         </div>   

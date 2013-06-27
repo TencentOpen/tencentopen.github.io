@@ -31,7 +31,7 @@
         return data ? fn( data ) : fn;
     };
 
-    // bink share 
+    // share 
     $(document).on('click', '[data-item]', function (e) {
         var itemType = $(this).data('item'),
             itemValue = $(this).data('item-value');
@@ -72,10 +72,10 @@
     // render proj
     var list = [{
         url: 'http://alloyteam.github.io/JX/',
-        name: 'Jx',
+        name: 'JX',
         img: 'img/proj/jx.png',
         brief: '模块化的非侵入式Web前端框架',
-        intro: 'Jx 是模块化的非侵入式 Web 前端框架，开发于2008年，腾讯 WebQQ、腾讯 Q+ 等产品都是采用 Jx 框架开发，兼容目前所有主流浏览器。'
+        intro: 'Jx 是模块化的非侵入式 Web 前端框架，开发于2008年，腾讯 WebQQ、腾讯 Q+ 等产品都是采用 JX 框架开发，兼容目前所有主流浏览器。'
     }, {
         url: 'http://alloyteam.github.io/AlloyPhoto/',
         name: 'AlloyImage',
@@ -96,10 +96,10 @@
         intro: 'Rythem 是一个与 Fiddler 同类的软件，具有代理抓包/替换等功能，而且跨平台 & 开源。'
     }, {
         url: 'http://alloyteam.github.io/jxanimate/',
-        name: 'JxAnimate',
+        name: 'JX.Animate',
         img: 'img/proj/jxanimate.png',
         brief: 'html5/css3 动画引擎',
-        intro: 'JxAnimation 是一个开源的轻量级的CSS3动画库。可以使用 CSS3 KeyFrame 制作，也可以使用 JavaScript 动态生成动画关键帧。'
+        intro: 'JX.Animation 是一个开源的轻量级的CSS3动画库。可以使用 CSS3 KeyFrame 制作，也可以使用 JavaScript 动态生成动画关键帧。'
     }];
     var data = {
         list: list
