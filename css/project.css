@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 header {
-    background: #1E2B33;
+    background: #252525;
     color: #fff;
 }
 
@@ -52,7 +52,7 @@ header .container {
     bottom: -40px;
     right: 0;
     height: 70px;
-    background: url('../img/icon_download.png') no-repeat 0% 90%;
+    background: url('../img/icon-download.png') no-repeat 0% 90%;
 }
 
 .zip_download_link {
@@ -62,7 +62,7 @@ header .container {
     height: 70px;
     text-indent: -5000px;
     overflow: hidden;
-    background: url('../img/sprite_download.png') no-repeat bottom left;
+    background: url('../img/sprite-download.png') no-repeat bottom left;
 }
 
 .tar_download_link {
@@ -72,16 +72,16 @@ header .container {
     height: 70px;
     text-indent: -5000px;
     overflow: hidden;
-    background: url('../img/sprite_download.png') no-repeat bottom right;
+    background: url('../img/sprite-download.png') no-repeat bottom right;
     margin-left: 10px;
 }
 
 .zip_download_link:hover {
-    background: url('../img/sprite_download.png') no-repeat top left;
+    background: url('../img/sprite-download.png') no-repeat top left;
 }
 
 .tar_download_link:hover {
-    background: url('../img/sprite_download.png') no-repeat top right;
+    background: url('../img/sprite-download.png') no-repeat top right;
 }
 
 .logo{

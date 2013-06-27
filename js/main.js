@@ -75,7 +75,7 @@
         name: 'JX',
         img: 'img/proj/jx.png',
         brief: '模块化的非侵入式Web前端框架',
-        intro: 'Jx 是模块化的非侵入式 Web 前端框架，开发于2008年，腾讯 WebQQ、腾讯 Q+ 等产品都是采用 JX 框架开发，兼容目前所有主流浏览器。'
+        intro: 'JX 是模块化的非侵入式 Web 前端框架，开发于2008年，腾讯 WebQQ、腾讯 Q+ 等产品都是采用 JX 框架开发，兼容目前所有主流浏览器。'
     }, {
         url: 'http://alloyteam.github.io/AlloyPhoto/',
         name: 'AlloyImage',
