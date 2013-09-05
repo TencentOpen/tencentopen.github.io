@@ -1,20 +1,12 @@
 /* to-do normalize.css */
 
 body{
-    /*background-color: #F8F3D5;*/
     background-color: #fff;
-    /*background-color: #E6E5E6;*/
     font-family: "微软雅黑",tahoma;
 }
 
 .header{
-    /*background-color: #3278be;*/
-    /*border-bottom: 3px solid #1e64aa;*/
-    /*background-color: #282828;*/
-    /*background-color: #3C454F;*/
-    /*background-color: #252525;*/
     background-image: url(../img/nav-tail.png);
-    /*border-bottom: 2px solid #468847;*/
     border-bottom: 1px solid #ddd;
 }
 
@@ -47,27 +39,24 @@ body{
 
 .narbar > li > a:hover, .narbar > li > a:focus{
     color: #ccc;
-    /*background: none;*/
     background: #1481C6;
 }
 
 .main{
-    /*background-color: #F8F3D5;*/
-    border-top: 2px solid #000;
+    height: 450px;
+    background: url(../img/banner1.jpg) center center;
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
 }
 
-.main-inner{
-    padding: 15px 0;
+.share{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
 }
 
 .share-inner{
     position: relative;
     height: 25px;
     padding: 15px 0;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    /*border-top: 3px solid #C8C5B7;*/
 }
 
 .share-inner .follow{
@@ -84,12 +73,46 @@ body{
     margin-bottom: 0;
 }
 
+#recommendCarousel .item{
+    height: 450px;
+}
+
+#recommendCarousel .slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#recommendCarousel .slide-link{
+    width: 480px;
+    height: 320px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -160px;
+}
+
+#recommendCarousel .slide1{
+    background: url(../img/slide1.png) no-repeat center center;
+}
+
+#recommendCarousel .slide2{
+    background: url(../img/slide2.png) no-repeat center center;
+}
+
+#recommendCarousel .slide3{
+    background: url(../img/slide3.png) no-repeat center center;
+}
+
 .footer {
+    color: #fff;
     text-align: center;
     padding: 30px 0;
     margin-top: 70px;
     border-top: 1px solid #e5e5e5;
-    background-color: #f5f5f5;
+    background-color: #252525;
 }
 
 .recommend-info{
@@ -132,6 +155,10 @@ body{
     background-position: 0 -280px;
 }
 
+.proj-name{
+    text-align: center;
+}
+
 .proj-img{
     display: block;
     margin: 10px auto 10px;
@@ -141,6 +168,7 @@ body{
 .proj-highlight{
     font-size: 18px;
     color:#3a3a3a;
+    text-align: center;
 }
 
 .proj-intro{
