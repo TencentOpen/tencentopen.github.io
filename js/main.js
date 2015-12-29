@@ -71,7 +71,7 @@
 
     // render proj
     var list = [{
-        url: 'http://tencentopen.github.io/behaviac/',
+        url: 'http://www.behaviac.com/',
         name: 'behaviac',
         img: 'img/proj/behaviac.png',
         brief: '游戏AI的开发框架组件',
